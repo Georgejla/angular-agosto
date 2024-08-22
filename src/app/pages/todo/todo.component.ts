@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, } from '@angular/core';
+import { NTodo } from '../../models/todo.model';
 
 @Component({
   selector: 'app-todo',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './todo.component.scss'
 })
 export class TodoComponent {
-
+  @Input({ required: true })  todoData!: NTodo.TodoData;
 }
