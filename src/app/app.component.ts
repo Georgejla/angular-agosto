@@ -13,4 +13,9 @@ import { TODO_DATA } from '../assets/todo';
 export class AppComponent {
   todoData1 = TODO_DATA[0];
   todoData2 = TODO_DATA[1];
+
+  getTodoInfo(val: boolean){
+    console.log(val);
+  }
+
 }
